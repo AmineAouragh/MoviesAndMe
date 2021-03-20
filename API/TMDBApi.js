@@ -9,3 +9,10 @@ export function getFilmsFromApiWithSearchedText(text) {
       .then((response) => response.json())
       .catch((error) => console.error(error))
 }
+
+// Get the Poster URL of films from TMDB API with name as the movie title
+
+export function getImageFromApi(name) {
+  // w300 means an image with a width of 300
+  return 'https://image.tmdb.org/t/p/w300' + name
+}
