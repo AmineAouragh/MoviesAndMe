@@ -57,6 +57,10 @@ export default class Search extends Component {
     }
   }
 
+  _displayDetailForFilm = (idFilm) => {
+    console.log(`Display film with ${idFilm}`)
+  }
+
   render() {
     return (
 
@@ -90,8 +94,7 @@ export default class Search extends Component {
 
 const styles = StyleSheet.create({
   main_container: {
-    flex: 1,
-    marginTop: 20
+    flex: 1
   },
   textInput: {
     marginLeft: 5,
